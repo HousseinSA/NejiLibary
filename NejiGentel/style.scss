@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+@import "functions";
+@import "variables";
+
+// base and layout
+@import "breakpoints";
+@import "grid";
+@import "base";
+@import "positions";
+// colors
+@import "colors";
+
+// components (button ,navbar  ,card)
+@import "card";
+@import "buttons";
+@import "navbar";
+@import "badge";
+
+// utilities (margin ,padding ,opacity)
+
+@import "utilities";

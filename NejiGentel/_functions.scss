@@ -1,0 +1,5 @@
+@function btn-comp($color) {
+  $color-comp: complement($color);
+  $light-color-comp: lighten($color-comp, 20);
+  @return $light-color-comp;
+}

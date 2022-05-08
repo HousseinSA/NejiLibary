@@ -1,0 +1,9 @@
+// position list
+$positions: absolute, relative, fixed, static;
+
+// looping of position list
+@each$val in $positions {
+  .pos-#{$val} {
+    position: $val;
+  }
+}

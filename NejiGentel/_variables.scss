@@ -1,0 +1,53 @@
+@use "sass:math";
+
+// theme color
+$primary: #597935 !default;
+$secondary: #4b5c39;
+$error: #b81b1b;
+$info: #2d9fcc;
+
+// color palette
+$colors: (
+  "primary": $primary ,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "red": #f70808,
+  "yellow": #f8f803,
+  "blue": blue,
+  "green": green,
+  "purple": purple,
+  "orange": orange,
+  "grey": grey,
+  "white": white,
+  "black": black,
+);
+
+
+// @debug map-get($colors, "red");
+// @debug map-has-key($colors, "blue");
+// @debug map-remove($colors, "primary");
+// @debug map-merge(
+//   $colors,
+//   (
+//     "pink": pink,
+//   )
+// );
+
+// spacing
+$base-padding: .7rem;
+$base-margin: .7rem;
+// border
+$base-border-thikness: 2px;
+$base-border-radius: 20px;
+$border-radius-sm: math.div($base-border-radius, 4);
+
+// box shadow
+$base-box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.1);
+
+// font size
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * .7;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

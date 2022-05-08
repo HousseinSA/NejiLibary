@@ -1,0 +1,33 @@
+// base flex layout
+%flex-layout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+// navbar class
+
+.navbar {
+  @extend %flex-layout;
+  box-sizing: border-box;
+  padding: $base-padding;
+  box-shadow: $base-box-shadow;
+  .navbar-title {
+    font-size: $font-size-lg;
+    margin: 0;
+  }
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+// color loop for navbar background
+
+@each $key, $val in $colors {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background: $val;
+  }
+}
